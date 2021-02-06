@@ -1,0 +1,76 @@
+body{
+  margin: 0;
+  background-color: rgb(27, 27, 27);
+}
+::-webkit-scrollbar{
+  width: 10px;
+  background: rgb(42, 28, 51);
+}
+::-webkit-scrollbar-thumb{
+  background:rgb(80, 74, 87);
+}
+.GridWrapper{
+  display: flex;
+  width:700px;
+  height: auto;
+  margin: auto;
+  flex-direction: row;
+  background-color: rgb(160, 160, 160);
+}
+.DijkstraButton{
+  position: relative;
+  height: 30px;
+  width: 90px;
+  background-image: linear-gradient(90deg, rgb(136, 255, 0),rgb(0, 255, 76));
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 5px;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 35px;
+  top: 20px;
+  cursor: pointer;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 1px;
+  font-size: 18px;
+  transition: all .2s ease;
+}
+.ResetBoardButtonWrapper{
+  text-align: center;
+}
+.ResetBoardButton{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.DijkstraButton:hover{
+  color:rgb(255, 255, 255);
+}
+.Rules{
+  color: white;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 1px;
+  text-align: center;
+}
+@media(max-width: 800px){
+  .GridWrapper{
+  width:500px;
+}
+}
+@media(max-width: 600px){
+  .GridWrapper{
+  width:400px;
+}
+}
+@media(max-width: 499px){
+  .GridWrapper{
+  width:250px;
+  }
+  .Rules{
+  color: white;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 14px;
+}
+}
